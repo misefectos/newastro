@@ -1,7 +1,5 @@
 ---
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageTitle = "Blog";
 ---
 <html lang="en">
   <head>
@@ -9,11 +7,11 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>- MONEDER0H - </title>
+    <title>- MONEDER0H : {pageTitle}- </title>
   </head>
   <body>
 
-  <h1>Sobre Monederoh</h1>
+  <h1>{pageTitle}</h1>
   <nav>
      <ul>
       <li><a href="/">Home</a></li>
@@ -21,8 +19,11 @@
       <li><a href="/blog/">Blog</a></li>
     </ul>
   </nav>
-  <h2>Quiénes somos</h2>
-  <p>Somos Paula y Laia. Las primicas Monedero, "las rubiales" (aunque ya sólo quede una rubia), las de "víctor el de antoñico", las de las Piqueras, las de Maria Josefa, la "greenpí" y su prima. </p>
-  <p>En 2023 Laia soñó que encontraba a Paula paseando una burra cargada de faldas por Madrid (donde vivía en aquella época). En el sueño Paula le decía que las había cosido ella y que iba a venderlas al parque del Retiro. Resultó que Paula no tenía una burra llena de faldas, pero sí que (fíjate tú que casualidad..) como Laia, acababa de recojer su máquina de coser en el taller porqué estaba deseando hacerse su propia ropa.</p>
+  <h2>Blog</h2>
+          <ul>
+      <li><a href="/posts/post-1/">Post 1</a></li>
+      <li><a href="/posts/post-2/">Post 2</a></li>
+      <li><a href="/posts/post-3/">Post 3</a></li>
+    </ul>
 </body>
 </html>
